@@ -1,0 +1,30 @@
+# Minecraft Server .gitignore
+
+# ⚠️ CRITICAL: DO NOT track massive JARs (Pixelmon is ~400MB and will crash a GitHub push)
+*.jar
+mods/Pixelmon*.jar
+
+# World Save Data (Changes constantly and gets huge)
+world/
+world_nether/
+world_the_end/
+backups/
+
+# Logs and Diagnostics
+logs/
+crash-reports/
+*.log
+*.log.gz
+
+# Cache, Libraries, and Temporary Files
+cache/
+libraries/
+.mixin.out
+*.swp
+
+# Server Player Data (Security reasons)
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+usercache.json
